@@ -11,7 +11,6 @@ router.use(validarJWT); //Realiza la validacion de token en TODAS LAS RUTAS -
 
 router.get('/', getEventos)
 
-
 router.post('/',
 [
     check('title', 'El titulo es oblogatorio').not().isEmpty(),
